@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class Circle { 
+public:
+double r;
+double PI=3.14;
+
+double carea(){
+return PI*r*r;
+}
+};
+
+int main()
+
+{
+
+ Circle c1;
+ 
+ double area;
+ 
+    cout <<"enter value for radii"<< endl;
+    cin>>c1.r;
+    
+    
+    area=c1.carea();
+    cout << "area of circle is:" <<c1.carea()<<endl;
+    
+    
+    return 0;
+}
