@@ -1,0 +1,41 @@
+#include<iostream>
+#include<string>
+using namespace std ;
+
+int max(int a, int b, int c){
+   if (a>b && a>c){
+     return a;
+   }else if (b>c && b>c){
+    return b;
+   }else if (c>a && c>a){
+    return c;
+   }
+}
+
+
+string max (string a,string b, string c){
+  int la = a.length();
+  int lb = b.length();
+  int lc = c.length();
+  if (la>lb && la>lc){
+     return a;
+   }else if (lb>lc && lb>lc){
+    return b;
+   }else if (lc>la && lc>la){
+    return c;
+   }
+}
+
+
+int main (){
+
+    int maximum;
+    int x = 5, y = 6, z = 2;
+    
+    string f = "Apple", g = "Banana", h = "Pineaaple";
+    
+        
+    maximum = max (x,y,z);
+    cout <<  maximum;
+    return 0;
+}
