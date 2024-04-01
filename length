@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class room {
+ private:
+ double length;
+ double width;
+ double height; 
+ 
+ public:
+ double calculatearea(double l,double w){
+    length = l;
+     width = w;
+         return length*width;
+ }
+ 
+ double calculateVol(){
+ return length *width * height;
+ }
+ };
+ int main (){
+ room r1;
+ double area,vol;
+ double ln, wd, ht;
+ cout << " give lenth width and height of a room " ;
+ cin >> ln >> wd >> ht;
+ 
+  area = r1.calculatearea(ln, wd);
+  // vol = r1.calculatevol();
+  cout << " area of the room is :" << area<< endl;
+  // cout << "Volumebof the room is :"<< vol << endl;
+
+ return 0;
+}
