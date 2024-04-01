@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+ string name;
+  void hello() {
+    cout << "Name: " << name << endl;
+    }
+};
+
+int main() {
+  Student S;    // create object
+  S.name = "Chavda Devi, parmar heli";
+  S.hello();
+  int age;
+  cout << "enter age" << endl;
+cin >> age;
+  return 0;
+}
