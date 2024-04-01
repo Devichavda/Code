@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+struct college_info{
+ int intake;
+ int college_code;
+ string college_name;
+ string department;
+ };
+int main()
+{
+ college_info s1={719,69,"gpj","computer"};
+ 
+ 
+ cout<<"intake:"<<s1.intake<<endl;
+ cout<<"college_code:"<<s1.college_code<<endl;
+ cout<<"college_name:"<<s1.college_name<<endl;
+ cout<<"department:"<<s1.department<<endl;
+ return 0;
+}
