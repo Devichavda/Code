@@ -1,0 +1,43 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+class Employee {
+private:
+    int empNumber;
+    string empName;
+    double basic;
+    double DA;
+    double IT;
+    double netSalary;
+
+public:
+    
+    Employee(int number, string name, double basicSalary, double da, double it) {
+        empNumber = number;
+        empName = name;
+        basic = basicSalary;
+        DA = da;
+        IT = it;
+        
+        netSalary = basic + DA - IT;
+    }
+
+    
+    void printData() {
+        cout << "Employee Number: " << empNumber << endl;
+        cout << "Employee Name: " << empName << endl;
+        cout << "Basic Salary: " << basic << endl;
+        cout << "Dearness Allowance: " << DA << endl;
+        cout << "Income Tax: " << IT << endl;
+        cout << "Net Salary: " << netSalary << endl;
+    }
+};
+
+int main() {
+    
+    Employee emp(101, "John Doe", 50000, 10000, 5000);
+    emp.printData();
+
+    return 0;
+}
